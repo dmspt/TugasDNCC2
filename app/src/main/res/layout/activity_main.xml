@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/kubus"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Kubus"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/textblack"
+        android:padding="@dimen/padding_top"
+        android:fontFamily="monospace"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding">
+
+        <EditText
+            android:id="@+id/edt_sisi1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Input Sisi 1"
+            android:paddingBottom="@dimen/paddingBottom"/>
+
+        <EditText
+            android:id="@+id/edt_sisi2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Input Sisi 2"
+            android:paddingBottom="@dimen/paddingBottom"/>
+
+        <Button
+            android:id="@+id/btn_hitung"
+            android:onClick="hitungluas"
+            android:paddingTop="@dimen/padding_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hitung Luas"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/textblack"
+            android:text="Jadi Luas Kubus dengan sisi "/>
+
+        <TextView
+            android:id="@+id/txt_sisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/textblack"
+            android:textStyle="bold|italic"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/textblack"
+            android:text=" adalah : "/>
+
+        <TextView
+            android:id="@+id/txt_hasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/textblack"
+            android:textStyle="bold|italic"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>
